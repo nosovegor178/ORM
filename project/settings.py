@@ -3,14 +3,20 @@ from dotenv import load_dotenv
 
 
 load_dotenv()
+DB_ENGINE = os.getenv('ENGINE')
+DB_HOST = os.getenv('HOST')
+DB_PORT = os.getenv('PORT')
+DB_NAME = os.getenv('NAME')
+DB_USER = os.getenv('USER')
+DB_PASSWORD = os.getenv('PASSWORD')
 DATABASES = {
     'default': {
-        'ENGINE': os.getenv('ENGINE'),
-        'HOST': os.getenv('HOST'),
-        'PORT': os.getenv('PORT'),
-        'NAME': os.getenv('NAME'),
-        'USER': os.getenv('USER'),
-        'PASSWORD': os.getenv('PASSWORD'),
+        'ENGINE': DB_ENGINE,
+        'HOST': DB_HOST,
+        'PORT': DB_PORT,
+        'NAME': DB_NAME,
+        'USER': DB_USER,
+        'PASSWORD': DB_PASSWORD,
     }
 }
 
