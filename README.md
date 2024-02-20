@@ -16,13 +16,13 @@ pip install -r requirements.txt
 ### Переменные окружения
 Необходимо создать файл .env в котором нужно прописать такие строки:
 ```
-ENGINE='engine'
-HOST='host'
-PORT='port'
-NAME='name'
-USER='username'
-PASSWORD='password'
-DEBUG=false
+DB_ENGINE='engine' - движок сайта
+DB_HOST='host' - хост сайта
+DB_PORT='port' - порт сайта
+DB_NAME='name' - имя 
+DB_USER='username' - имя пользователя
+DB_PASSWORD='password' - пароль
+DB_DEBUG=false
 ```
 Здесь вместо значений в кавычках нужно подставить свои. Без этого программа работать не будет.
 
