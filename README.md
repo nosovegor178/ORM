@@ -22,7 +22,9 @@ DB_PORT='port' - порт сайта
 DB_NAME='name' - имя 
 DB_USER='username' - имя пользователя
 DB_PASSWORD='password' - пароль
-DB_DEBUG=false
+DEBUG=false
+SECRET_KEY='secret_key' - секретный ключ
+ALLOWED_HOSTS='alowed_hosts' - разрешенные хосты
 ```
 Здесь вместо значений в кавычках нужно подставить свои. Без этого программа работать не будет.
 
